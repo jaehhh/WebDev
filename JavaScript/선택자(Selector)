@@ -1,0 +1,33 @@
+선택자(Selector)
+
+  document.querySelector(???)
+  
+  "*"                      모든 요소
+  "#id"                    ID명
+  ".cls"                   클래스명
+  "button"                 태그명
+  "button, #btnPrev"       or
+  "button#btnPrev"         and
+  "[value]"                속성명
+  "[value='Aiden']"        속성명=속성 값
+  "[value!='Aiden']"       속성명!=속성 값
+  "[value^='A']"           속성명^=속성 시작 값
+  "[value$='n']"           속성명$=속성 끝 값
+  "input[name='rdiGroup']" 태그 + 속성명=속성 값
+  "div > input"            부모와 바로 아래 자식 일치
+  "div input"              부모와 자식 일치
+  "input + label"          동등계층에서 1번 선택자(input) 바로 다음에 있는 선택자(label)
+  "div ~ pre"              동등계층에서 선택자 뒤에 모든 다음형제 선택자
+  "div:even"               짝수번째 선택자
+  "div:odd"                홀수번째 선택자
+  "li:nth-child(2)"        형제 요소(li) 중 index에 해당하는 요소
+  "li:first"               형제 요소(li) 중 첫번째
+  "li:last"                형제 요소(li) 중 마지막번째
+  "li:eq(2)"               index번째 요소(li)
+  "li:gt(2)"               index번째 이후 요소(li)
+  "li:lt(2)"               index번째 이전 요소(li)
+  "option:selected"        요소 상태 (div:hidden, input:disabled 등)
+                            "input[type='checkbox']:checked" checked된 checkbox
+  "input:not(:disabled)"   상태를 만족하지 않는(disabled되지 않은) 요소
+  "div:has(h1)"            포함된 선택자(h1)를 포함하고 있는 선택자(div)
+  "p:contains('hi')"       문자열을 포함한 선택자
