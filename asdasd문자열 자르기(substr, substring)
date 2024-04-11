@@ -1,0 +1,23 @@
+문자열 자르기(substr, substring)
+
+Oracle
+substr('문자열', startIndex) 시작 자리수부터 끝까지
+substr('문자열', startIndex, length) 시작 자리수부터 길이만큼
+substr('문자열', -startIndex, length) 음수면 뒤에서부터 자리수를 센다.
+
+JavaScript
+"문자열".substr(startIndex) 시작 자리수부터 길이만큼
+"문자열".substr(startIndex, length) 시작 자리수부터 길이만큼
+"문자열".substr(-startIndex, length) 음수면 뒤에서부터 자리수를 센다.
+
+"문자열".substring(startIndex) 시작 자리수부터 끝까지
+"문자열".substring(startIndex, endIndex) 시작 자리수부터 종료 인덱스 직전까지
+"문자열".substring(-startIndex, endIndex) 음수면 0과 같다.
+
+Java
+"문자열".substring(startIndex) 시작 자리수부터 끝까지
+"문자열".substring(startIndex, endIndex) 시작 자리수부터 종료 인덱스 직전까지
+
+C#
+Substring(startIndex) 시작 자리수부터 끝까지
+Substring(startIndex, length) 시작 자리수부터 길이만큼
